@@ -56,3 +56,11 @@ function clearActiveClasses() {
         item.classList.remove('active');
     });
 }
+
+const body = document.querySelector('body');
+const {width} = body.getBoundingClientRect();
+const mobile = document.querySelector('.to-mobile');
+
+if (width < 1500) {
+    mobile.style.opacity = '1';
+}

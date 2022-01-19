@@ -13,6 +13,8 @@ body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar {
@@ -107,7 +109,7 @@ button:focus {
 /* inner slider box */
 
 .content {
-    background-color: rgba(255, 151, 99, .6);
+    background-color: rgba(255, 151, 99, .7);
     border-radius: 20px;
     width: 80%;
     height: 80%;
@@ -174,4 +176,18 @@ button:focus {
     opacity: 1;
     margin: 15px 20px;
     transition: .3s;
+}
+
+.to-mobile {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    padding: 10px;
 }
